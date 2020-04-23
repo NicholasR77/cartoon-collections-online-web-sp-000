@@ -12,7 +12,12 @@ end
 
 def long_planeteer_calls(array)# code an argument here
   # Your code here
-
+  new_array = array.select {|num| num.length > 4}
+  if (new_array.include(false))
+    false
+  else
+    true
+  end    
 end
 
 def find_the_cheese# code an argument here
